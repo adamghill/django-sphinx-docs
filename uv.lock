@@ -115,7 +115,7 @@ wheels = [
 
 [[package]]
 name = "django-sphinx-docs"
-version = "0.3.3"
+version = "0.4.1"
 source = { editable = "." }
 dependencies = [
     { name = "django", version = "5.2.11", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12'" },
