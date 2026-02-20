@@ -1,9 +1,10 @@
 [project]
 name = "django-sphinx-docs"
-version = "0.3.3"
-description = "Allows to serve Sphinx generated docs from django."
+version = "0.4.1"
+description = "Serve Sphinx docs from Django."
 authors = [
     { name = "Evgeny Demchenko", email = "little_pea@list.ru" },
+    { name = "Adam Hill", email = "github@adamghill.com" },
 ]
 license = { text = "BSD" }
 readme = "README.md"
@@ -25,14 +26,7 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/littlepea/django-docs"
-
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
-
-[tool.hatch.build.targets.wheel]
-packages = ["src/django_sphinx_docs"]
+Homepage = "https://github.com/adamghill/django-sphinx-docs"
 
 [dependency-groups]
 dev = [
@@ -65,3 +59,10 @@ python_files = ["tests.py", "test_*.py", "*_tests.py"]
 
 [tool.ty]
 # Add ty configuration if needed
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/django_sphinx_docs"]
